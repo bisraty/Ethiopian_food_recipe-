@@ -97,11 +97,13 @@ class _recipesState extends State<recipes> {
                   return ListTile(
                     title:Padding(
                       padding: const EdgeInsets.only(right: 10.0),
-                      child: Text('${widget.resp[index]}',
-                        style: TextStyle(
-                          fontSize: 20,
-                          color: Colors.black,
-                          fontWeight: FontWeight.bold,
+                      child:Card(
+                        child: Text('${widget.resp[index]}',
+                          style: TextStyle(
+                            fontSize: 20,
+                            color: Colors.black,
+                            fontWeight: FontWeight.bold,
+                          ),
                         ),
                       ),
                     ) ,
